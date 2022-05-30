@@ -1,27 +1,54 @@
 // TABLE OF CONTENTS
 
 import React from "react";
+import ContactCard from "./components/ContactCard";
+import ToDoItem from "./components/ToDoItem";
 
 // TO DO APP
 
-const App = () => {
-  return (
-    <div>
-      <p>clean room</p>
-      <input type="checkbox" />
-      <p>wash dishes</p>
-      <input type="checkbox" />
-      <p>vaccumm carpets</p>
-      <input type="checkbox" />
-      <p>dust shelves</p>
-      <input type="checkbox" />
-    </div>
-  );
-};
-
-export default App;
+// const App = () => {
+//   return (
+//     <div className="todo-list">
+//       <ToDoItem />
+//       <ToDoItem />
+//       <ToDoItem />
+//       <ToDoItem />
+//     </div>
+//   );
+// };
 
 // LECTURE EXERCISES
+
+function App() {
+  return (
+    <div className="contacts">
+      <ContactCard
+        contact={{
+          name: "Mr. Whiskerson",
+          imgUrl: "http://placekitten.com/300/200",
+          phone: "(515) 555-5555",
+          email: "cat1@meow.com",
+        }}
+      />
+      <ContactCard
+        contact={{
+          name: "Mr. Whiskerson",
+          imgUrl: "http://placekitten.com/400/200",
+          phone: "(515) 555-5555",
+          email: "cat1@meow.com",
+        }}
+      />
+      <ContactCard
+        contact={{
+          name: "Mr. Whiskerson",
+          imgUrl: "http://placekitten.com/400/300",
+          phone: "(515) 555-5555",
+          email: "cat1@meow.com",
+        }}
+      />
+    </div>
+  );
+}
 
 // import Header from "./components/Header";
 // import MainContent from "./components/MainContent";
@@ -56,3 +83,5 @@ export default App;
 //     </div>
 //   );
 // }
+
+export default App;
